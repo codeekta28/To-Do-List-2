@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>To Do App</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0  ">
+        <div class="headingContainer">
+            <div class=" w-25 mx-auto">
+            <h1>To Do App</h1>
+            <p class="lead m-0 pb-2">What do you need to do?</p>
+        </div>
+        </div>
+        <div class="filterContainer p-3">
+            <div class=" w-25 mx-auto">
+                <input type="text" class="p-1 " id="filterNotes" placeholder="Filter todos">
+                <input type="checkbox" class="checkBox" id="hideCompleted">
+                <label class="form-check-label" for="hideCompleted">Hide Completed</label>
+            </div>
+        </div>
+        <div class="listContainer  h-100  ">
+            <div class=" w-25 mx-auto listSecondContainer">
+            <h4 class="my-4">You have <span id="listCount"></span> to do left</h4 class="my-4">
+                <!-- <div class=" dynamicListContainer border border-danger  my-3 px-3 ">
+                    <input type="checkbox" class="" id="exampleCheck1">
+                    <label class="px-2" for="exampleCheck1">Check me out</label>
+                    <p class="remove">remove</p>
+                </div> -->
+            <input type="text" class="p-1 mx-2" id="listNotes">
+            <button type="submit" class="btn btn-primary p-1 px-2">Submit</button>
+        </div>
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+
+</body>
+
+</html>
